@@ -34,7 +34,7 @@ Input layer:
               outputs=[attr_output, dept_output],
               name='predict_attrition_model')</code>
 
-# Compile the model
+### Compile the model
 </code>model.compile(optimizer='adam',
               loss={'attr_output': 'categorical_crossentropy',
                     'dept_output': 'categorical_crossentropy'},
@@ -43,7 +43,7 @@ Input layer:
                        'dept_output': 'accuracy'}
               )</code>
               
-# Train the model
+### Train the model
 </code>model.fit(
     X_train_scaled,
     {'attr_output': y_attr_train, 'dept_output': y_dept_train},
