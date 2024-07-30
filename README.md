@@ -30,9 +30,7 @@ Input layer:
 
 ### Create the model
 <code>model = Model(inputs=input_layer, outputs=[attr_output, dept_output])</code>
-</code>model = Model(inputs=input_layer, 
-              outputs=[attr_output, dept_output],
-              name='predict_attrition_model')</code>
+
 
 ### Compile the model
 </code>model.compile(optimizer='adam',
